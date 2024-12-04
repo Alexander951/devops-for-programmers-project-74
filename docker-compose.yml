@@ -1,10 +1,8 @@
 
 services:
   app:
+    image: alexandr999/devops-for-programmers-project-74
     build:
       context: .
-      dockerfile: ./Dockerfile.production
-    image: Alexander951/devops-for-programmers-project-74
-    #volumes:
-      #- "./app:/app"
-    command: npm run test  
+      dockerfile: Dockerfile.production
+    command: make test  
