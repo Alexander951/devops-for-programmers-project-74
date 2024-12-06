@@ -2,7 +2,9 @@ name: push
 
 on:
   push:
-
+    branches:
+      - 'main'
+      
 env:
   APP_IMAGE_NAME: alexandr999/devops-for-programmers-project-74:latest
 
