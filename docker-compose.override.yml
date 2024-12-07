@@ -8,6 +8,8 @@ services:
     volumes:
       - "./app:/app"
     command: make dev
+    environment:
+     - NODE_ENV=development 
     
   caddy:
     image: caddy:latest
